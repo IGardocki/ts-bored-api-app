@@ -12,8 +12,8 @@ describe('Homepage', () => {
         render(<Homepage />);
         expect(screen.getByTestId('activity-button')).toBeInTheDocument();
     });
-    // test('Homepage should provde a space for user to see activity info', ()=>{
-    //     render(<Homepage />);
-    //     expect(screen.getByTestId('activity-info')).toBeInTheDocument();
-    // })
+    test('Homepage should provde a space for user to see activity info', ()=>{
+        render(<Homepage />);
+        expect(screen.getByTestId('activity-info')).toBeInTheDocument();
+    })
 })
