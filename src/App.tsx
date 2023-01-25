@@ -33,13 +33,15 @@ function App(): JSX.Element {
   }, [])
 
   return (
-    // <RecoilRoot>
+
     <div className="App" >
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-      </Routes>
+      {/* <RecoilRoot> */}
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+        </Routes>
+      {/* </RecoilRoot > */}
     </div>
-    // </RecoilRoot>
+
   );
 }
 
